@@ -5,53 +5,76 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   height: 100vh;
-  padding: 2rem;
+  padding: 0;
   margin: 0;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: $uoc-corporate;
-  background-color: $uoc-bg;
+  color: $futbol-negro;
+  background-color: $futbol-blanco;
 }
 
-.uoc-container {
-  max-width: 800px;
-  padding: 2rem;
+.tematica {
+  padding-left: 2em;
+  background-color: $futbol-verde-escala;
+}
+
+.competiciones, .ranking {
+  max-width: 1200px;
+  padding: 4rem;
   margin: auto;
+  margin-top: 3rem;
+  color: $futbol-negro-escala;
   text-align: center;
-  background-color: #fff;
+  background-color: $futbol-gris-escala;
   border-radius: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 10%),
+    0 2px 4px -1px rgba(0, 0, 0, 6%);
+  
+  &__imagen{
+    border-radius: 2rem;
+  }
 
-.uoc-logo {
-  display: block;
-  max-width: 200px;
-  height: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  margin-left: auto;
+  &__ol{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente 
+                      fila si no caben en el ancho de la pantalla */
+    justify-content: space-between; /* Espacio igual entre los elementos */
+  }
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+  &__li {
+    flex: 0 0 calc(50% - 10px); /* Ancho del 50% con espacio entre elementos */
+    margin: 5px; /* Espacio entre los elementos */
+    list-style: none; /* Elimina los puntos de la lista */
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+header {
+  padding: 0;
+  padding-top: 2.5rem;
+  color: $futbol-blanco;
+  text-align: center;
+  background-color: black;
+}
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+.cabecera {
+  display: flex;
+  justify-content: center;
+  
+  &__i{
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: 4rem;
   }
 }
 
-.uoc-footer {
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: center;
 }

@@ -5,23 +5,78 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Más futbol</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <header>
+      <div class="cabecera">
+        <h1>Más</h1> 
+        <div class="cabecera__i">
+          <i class="fa-regular fa-futbol"></i>
+        </div>
+        <h1>Fútbol</h1>
+      </div>
+      <p>¡Bienvenidos a mi página sobre mi pasión por el fútbol!</p>
+    </header>
+
+    <section class="tematica">
+      <h2>Temática de la Página</h2>
+      <p>El fútbol es mi afición favorita. Me apasiona ver partidos, seguir a mis equipos favoritos y conocer a los mejores jugadores del mundo. Esta página está dedicada a todo lo relacionado con el fútbol, incluye las competiciones más importantes y el ranking de los mejores jugadores.</p>
+    </section>
+    <section class="competiciones">
+      <h2>Competiciones Importantes</h2>
+      <ul>
+          <li>Liga de Campeones de la UEFA</li>
+          <li>Liga Española (La Liga)</li>
+          <li>Premier League</li>
+          <li>Serie A</li>
+          <li>Copa del Mundo de la FIFA</li>
+      </ul>
+    </section>
+
+    <section class="ranking">
+      <h2>Ranking de Mejores Jugadores</h2>
+      <ol class="ranking__ol">
+          <li class="ranking__li">
+            <h3>Lionel Messi</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/messi.webp?width=350" alt="Messi"/>
+            </picture>
+          </li>
+          <li class="ranking__li">
+            <h3>Neymar Jr.</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/neymar.jpg?width=350" alt="Ney"/>
+            </picture>
+          </li>
+          <li class="ranking__li">
+            <h3>Luka Modric</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/lukaModric.jpeg?width=350" alt="Modric"/>
+            </picture>
+          </li>
+          <li class="ranking__li">
+            <h3>Thomas Gravesen</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/ThomasGravesen.webp?width=200" alt="Gravesen"/>
+            </picture>
+          </li>
+          <li class="ranking__li">
+            <h3>Ronaldinho</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/1-Ronaldinho.png?width=200" alt="Ronaldinho"/>
+            </picture>
+          </li>
+          <li class="ranking__li">
+            <h3>Pablo Aimar</h3>
+            <picture>
+              <img class="ranking__imagen" src="./assets/images/pabloAimar.jpg?width=350" alt="Aimar"/>
+            </picture>
+          </li>
+      </ol>
+    </section>
+
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <!--<script type="module" src="./assets/scripts/main.js"></script> do not remove this line! -->
   </body>
 </html>
