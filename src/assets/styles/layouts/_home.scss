@@ -15,7 +15,7 @@ body {
   color: $futbol-negro;
   background-color: $futbol-blanco;
   @media (min-width: $mqMinWidth) {
-    max-width: none;
+    max-width: 100%;
   }
 }
 
