@@ -14,6 +14,9 @@ body {
   line-height: 24px;
   color: $futbol-negro;
   background-color: $futbol-blanco;
+  @media (min-width: $mqMinWidth) {
+    max-width: none;
+  }
 }
 
 .tematica {
